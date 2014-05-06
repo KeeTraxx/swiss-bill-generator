@@ -2,6 +2,13 @@
     "name": "swiss-bill-generator",
     "version": "1.0.1",
     "main": "lib/SwissBill",
+    "author": "Khôi Tran <kt@compile.ch> (http://www.tran-engineering.ch)",
+    "scripts": {
+        "test": "node tests/smoke-test.js"
+    },
+    "directories": {
+        "lib": "lib"
+    },
     "dependencies": {
         "underscore": "^1.6.0",
         "pdfkit": "^0.6.1",
