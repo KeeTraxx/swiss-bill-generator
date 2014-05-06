@@ -1,0 +1,14 @@
+{
+    "name": "swiss-bill-generator",
+    "version": "1.0.1",
+    "main": "lib/SwissBill",
+    "dependencies": {
+        "underscore": "^1.6.0",
+        "pdfkit": "^0.6.1",
+        "underscore.string": "^2.3.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/KeeTraxx/swiss-bill-generator"
+    }
+}
