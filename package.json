@@ -1,7 +1,7 @@
 {
     "name": "swiss-bill-generator",
     "description": "Creates PDFs for Swiss ESR Payment",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "main": "lib/SwissBill",
     "author": "Khôi Tran <kt@compile.ch> (http://www.tran-engineering.ch)",
     "scripts": {
