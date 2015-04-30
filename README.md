@@ -3,6 +3,13 @@ swiss-bill-generator
 
 Creates PDFs for Swiss ESR Payment
 
+Install
+-------
+
+```
+npm install swiss-bill-generator
+```
+
 Usage
 -----
 
@@ -12,12 +19,12 @@ Usage
         amount: '3949.75',
         account: '01-92722-7',
         issuer: 'TestFirma GmbH\nTestweg 723\n3072 Ostermundigen',
-        billTo: 'Hans Mustermann\nMusterstrasse 28\n3012 Bern'
+        billTo: 'Hans Mustermann\nMusterstrasse 28\n3012 Bern',
         ref: '313947143000901'
     };
 
 ### Save to a file
-    var SwissBill = require('SwissBill');
+    var SwissBill = require('swiss-bill-generator');
     var bill = new SwissBill(opts);
     bill.savePDF('bill.pdf');
 
@@ -25,7 +32,7 @@ Usage
 See http://pdfkit.org/ for more information.
 
     var fs = require('fs');
-    var SwissBill = require('SwissBill');
+    var SwissBill = require('swiss-bill-generator');
     var bill = new SwissBill();
     var doc = bill.getPDF();
     doc.text('Hello');
@@ -36,7 +43,7 @@ See http://pdfkit.org/ for more information.
     doc.end();
 
 ### Send to HTTP response (browser download)
-    var SwissBill = require('SwissBill');
+    var SwissBill = require('swiss-bill-generator');
 
     // Express 4.x style
     router.get('/', function(req, res) {
